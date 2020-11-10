@@ -17,15 +17,9 @@ main(List<String> arguments) async {
     print(data);
   });
 
-  //bloc.output2.listen((int data) {
-  //  print(data);
-  // });
-
   int qty = val['qty'].toInt();
 
-  print(qty);
-
-  //bloc.addText("test");
+  bloc.addText(qty);
 
   await db.close();
 }
